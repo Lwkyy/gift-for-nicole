@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+        var password = prompt("Enter password to access the site");
+        if(password !== "0121") {
+            alert("Incorrect password!");
+            window.location.href = "index.html"; // Redirect to homepage if password is wrong
+        }
+    </script>    
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The start of nothing</title>
@@ -105,7 +113,7 @@
         <div class="section kitten-section">
             <h2>Featured Kittens</h2>
             <p>Therapy section. If ever stressed ka, this is the best place!</p>
-            <a href="https://example.com/kitten-gallery" target="_blank">Go to Kitten Gallery</a>
+<a href="Kittengallery.html" target="_blank">Visit the Kitten Gallery</a>
             <img src="https://media.tenor.com/0HMNfJ9Ttb8AAAAi/cat-spinning.gif" alt="Cat Icon" class="cat-icon">
         </div>
 

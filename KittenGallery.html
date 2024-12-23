@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitten Gallery</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #F4F1E1; /* Soft background color */
+            color: #333;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            margin-top: 30px;
+            color: #8B4513; /* Brown color for the header */
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+        }
+        .gallery img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        .section {
+            background-color: #FFF;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+        }
+        .section h2 {
+            font-size: 2em;
+            color: #8B4513;
+        }
+        .section p {
+            font-size: 1.2em;
+            color: #666;
+        }
+        .section a {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #8B4513;
+            color: #FFF;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        .section a:hover {
+            background-color: #A0522D;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Kitten Gallery</h1>
+    <div class="gallery" id="gallery">
+        <img src="https://catevolution.com.au/cdn/shop/articles/cutecatmeme-1200x750.jpg?v=1654802326" alt="Pampered Kitten">
+        <img src="https://i.ytimg.com/vi/9RmQqopN_Z0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBYTNiVGlsMPIRtIqBvV9XbMHn40Q" alt="Sus kitty">
+        <img src="https://i.pinimg.com/474x/c2/aa/61/c2aa616d137f6774ab222d6b30fdceb8.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/474x/77/8f/a4/778fa4b4e136028307ada1351b1887ae.jpg" alt="acousticbleh">
+        <img src="https://i.pinimg.com/736x/86/20/47/86204766db7dfe957596ff243ccdb6c7.jpg" alt="sadcat">
+        <img src="https://i.pinimg.com/736x/13/94/80/139480c5444951b05949aab26f9aa3e6.jpg" alt="rah">
+        <img src="https://i.pinimg.com/736x/79/a3/16/79a3168cf52edca304ff32db46e0f888.jpg" alt="egh">
+        <img src="https://catevolution.com.au/cdn/shop/articles/cutecatmeme-1200x750.jpg?v=1654802326" alt="Pampered Kitten">
+        <img src="https://i.ytimg.com/vi/9RmQqopN_Z0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBYTNiVGlsMPIRtIqBvV9XbMHn40Q" alt="Sus kitty">
+        <img src="https://i.pinimg.com/474x/c2/aa/61/c2aa616d137f6774ab222d6b30fdceb8.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/474x/77/8f/a4/778fa4b4e136028307ada1351b1887ae.jpg" alt="acousticbleh">
+        <img src="https://i.pinimg.com/736x/86/20/47/86204766db7dfe957596ff243ccdb6c7.jpg" alt="sadcat">
+        <img src="https://i.pinimg.com/736x/13/94/80/139480c5444951b05949aab26f9aa3e6.jpg" alt="rah">
+        <img src="https://i.pinimg.com/736x/79/a3/16/79a3168cf52edca304ff32db46e0f888.jpg" alt="egh">
+        <img src="https://i.pinimg.com/474x/c2/aa/61/c2aa616d137f6774ab222d6b30fdceb8.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/97/95/4f/97954f462110908eff0679c80e141a67.jpg" alt="traaa">
+        <img src="https://i.pinimg.com/736x/15/a1/b3/15a1b3bd6ea045efdcbe9c14ee71ca6d.jpg" alt="ddddh">
+        <img src="https://i.pinimg.com/474x/c2/aa/61/c2aa616d137f6774ab222d6b30fdceb8.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/ce/f4/14/cef414e5b55a8cea0fd31e05427cceb5.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/58/d4/8a/58d48a5bba78217256827e63a519168b.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/a8/11/bf/a811bfa1d12db3c6c00cdeb1ba95f8c6.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/fa/a2/e3/faa2e32942d78f906ff26d27716efb25.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/19/a0/6d/19a06d19632322a2f523d75e82ae6fe3.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/f3/e4/c7/f3e4c7bc799d4a7e31890942562831cd.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/ad/d3/e8/add3e87557f9aaf134f6de269ac85230.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/6e/e7/f9/6ee7f902e5d488129937de86b4edb6db.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/19/df/c6/19dfc62834117d8d0108cbbd63f7d7b1.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/38/da/b1/38dab14e1476369bafb0f8d20b22c716.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/e3/7d/b0/e37db0066444cc9c4babf92c905a6092.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/38/37/62/383762ab0fb411337159ae42c156e1ca.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/f5/38/38/f5383851b90e139d92827825b970f123.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/76/ec/20/76ec20befd956e0ad846781cfd0f25aa.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/44/e2/78/44e2784dfd8ad8e42af847a919d17511.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/a5/f4/a5/a5f4a5f864b668fd927c94b4f5caf27e.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/96/1b/10/961b10c845a1772cf4a0e00b1d5a35dd.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/93/c2/df/93c2df0a1d62f180d90ff73a312d4359.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/a0/20/66/a02066fafe045c6685408688b3c5dcb9.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/75/3f/75/753f7537849e42dba1ffd12918127ba7.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/e7/96/10/e79610aa8235eabf1eb6f5d1d4e2d34f.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/40/63/e0/4063e0c4201e0e221b735e51bd1e9beb.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/95/37/d0/9537d00210cce5d0f19e38e163a7dd85.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/88/2e/c7/882ec7f8322c9aad66b13685ec341cf7.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/5e/9d/48/5e9d489b8720b8d1d492e2702db9ca6c.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/c8/4f/c3/c84fc35efe42409874cb0727237e93f1.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/e3/8b/6d/e38b6d5bdb73ad487a3e79be4cb8103a.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/4c/f8/51/4cf851aa9d1abe2672cb8c81718acfa3.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/19/6d/21/196d2116d4043ea90b4835df2d278894.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/04/43/88/04438890dddf565aec7c0981a70f6785.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/33/79/aa/3379aa18141ea3e0c13b676b7002f582.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/9b/05/cf/9b05cf051d72385c5585365f39bb00f1.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/50/1d/8e/501d8ec6ed4ee4dbba4f1022b5fca26e.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/a3/59/1e/a3591e086be7f2adc53408a54b88f68f.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/3e/ff/6d/3eff6dad8d51538a304502f148e50997.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/71/ec/b4/71ecb4e657c391bbeabde9afd130e3ad.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/1a/7a/35/1a7a359bf3a73d7b1b5f6c927a1d73cc.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/7f/f5/b5/7ff5b5b74e08d204c2b3a37701ba39d5.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/b1/86/21/b1862191bd2085ca4a88e4be7b6087f3.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/d2/e8/4d/d2e84db483f4d122ff84b293ded2784e.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/53/d9/09/53d909139945a8c2734f843145bb7b29.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/f2/5f/d1/f25fd14d6ad4006a708ed4c33c238fb6.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/736x/74/74/29/747429b3fd670b7b9ac71c5c103760d0.jpg" alt="bleh">
+        <img src="https://i.pinimg.com/originals/f2/39/7b/f2397b519dc884860dd48469d67d6748.gif" alt="bleh">
+        <img src="https://i.pinimg.com/originals/0e/ba/e1/0ebae1a095888493cd43dff553511301.gif" alt="bleh">
+        <img src="https://i.pinimg.com/originals/28/56/58/285658585080fe41abe66c194afe42d4.gif" alt="bleh">
+        <img src="https://i.pinimg.com/originals/8f/ca/b8/8fcab88b3d529f35ae0d2cff2ef17c76.gif" alt="bleh">
+        <img src="https://media.tenor.com/NiExR-hqGz4AAAAM/sandwich-bread.gif" alt="bleh">
+        <img src="https://25.media.tumblr.com/tumblr_lxo57tqFEa1qg6vago1_400.gif" alt="bleh">
+        <img src="https://media.tenor.com/UGIf7Cv-B_cAAAAM/kitten-review.gif" alt="bleh">
+        <img src="https://media4.giphy.com/media/12HZukMBlutpoQ/200.gif?cid=6c09b952du5x2poi46u8aivnqin3tvzwzz85gjpixinsige6&ep=v1_gifs_search&rid=200.gif&ct=g" alt="bleh">
+        <img src="https://media.tenor.com/5x1_L18QtucAAAAM/silly-cat.gif" alt="bleh">
+        <img src="https://media1.tenor.com/m/CKy4WYA-xNMAAAAd/cat-cats.gif" alt="bleh">
+        <img src="https://media.tenor.com/Ywma7l0YcJMAAAAM/cat-kitten.gif" alt="bleh">
+        <img src="https://media.tenor.com/zlKoX5HPPu8AAAAM/cat-annoyed.gif" alt="bleh">
+        <img src="https://media.tenor.com/-qBsG1HwR4oAAAAM/cat-dance-dancing-cat.gif" alt="bleh">
+        <img src="https://media.tenor.com/ZGld2C6W3O8AAAAM/cat-fight.gif" alt="bleh">
+        <img src="https://media.tenor.com/Kslo79KC8BwAAAAM/silly-cat.gif" alt="bleh">
+        <img src="https://media.tenor.com/oohKIeHfOzIAAAAM/adorable-cat-animal-costume.gif" alt="bleh">
+        <img src="https://media.tenor.com/eI_NphxRoToAAAAM/slurp-cat.gif" alt="bleh">
+        <img src="https://media.tenor.com/OyadGugm7gMAAAAM/cat-cat-bite.gif" alt="bleh">
+        <img src="https://media.tenor.com/PHWeVhLXNp8AAAAM/rizz-cat-meme.gif" alt="bleh">
+
+    </div>
+
+    <div class="section">
+        <h2>Featured Kittens</h2>
+        <p>Therapy section. If ever stressed ka, this is the best place!</p>
+        <a href="https://example.com/kitten-gallery" target="_blank">Go to Kitten Gallery</a>
+    </div>
+
+    <div class="section music-section">
+        <h2>Filled with songs you love and a few recommendation po. Enjoy!</h2>
+        <p>Listen to playlists I created featuring Laufey and more.</p>
+        <a href="https://example.com/music-playlist" target="_blank">Explore the Playlist</a>
+    </div>
+
+    <div class="section song-section">
+        <h2>Yours truly</h2>
+        <p>Nakakahiya tong section na toh. These are my covers of songs of artists you recommended to me.</p>
+        <a href="https://example.com/original-song" target="_blank">Listen to the Song</a>
+    </div>
+
+    <script>
+        const catGifs = [
+            "https://media.tenor.com/NiExR-hqGz4AAAAM/sandwich-bread.gif",
+            "https://25.media.tumblr.com/tumblr_lxo57tqFEa1qg6vago1_400.gif",
+            "https://media.tenor.com/UGIf7Cv-B_cAAAAM/kitten-review.gif",
+            "https://media4.giphy.com/media/12HZukMBlutpoQ/200.gif?cid=6c09b952du5x2poi46u8aivnqin3tvzwzz85gjpixinsige6&ep=v1_gifs_search&rid=200.gif&ct=g",
+            "https://media.tenor.com/5x1_L18QtucAAAAM/silly-cat.gif",
+            "https://media1.tenor.com/m/CKy4WYA-xNMAAAAd/cat-cats.gif",
+            "https://media.tenor.com/Ywma7l0YcJMAAAAM/cat-kitten.gif",
+            "https://media.tenor.com/zlKoX5HPPu8AAAAM/cat-annoyed.gif",
+            "https://media.tenor.com/-qBsG1HwR4oAAAAM/cat-dance-dancing-cat.gif",
+            "https://media.tenor.com/ZGld2C6W3O8AAAAM/cat-fight.gif",
+            "https://media.tenor.com/Kslo79KC8BwAAAAM/silly-cat.gif",
+            "https://media.tenor.com/oohKIeHfOzIAAAAM/adorable-cat-animal-costume.gif",
+            "https://media.tenor.com/eI_NphxRoToAAAAM/slurp-cat.gif",
+            "https://media.tenor.com/OyadGugm7gMAAAAM/cat-cat-bite.gif",
+            "https://media.tenor.com/PHWeVhLXNp8AAAAM/rizz-cat-meme.gif",
+            "https://media.tenor.com/9RmQqopN_Z0AAAAM/cat-kitten.gif",
+            "https://media.tenor.com/8fca/b88b3d529f35ae0d2cff2ef17c76.gif",
+            "https://media.tenor.com/Ywma7l0YcJMAAAAM/cat-annoyed.gif",
+            "https://media.tenor.com/ZGld2C6W3O8AAAAM/cat-fight.gif",
+            "https://media.tenor.com/Kslo79KC8BwAAAAM/silly-cat.gif"
+        ];
+
+        function getRandomGifs(count) {
+            const shuffled = catGifs.sort(() => 0.5 - Math.random());
+            return shuffled.slice(0, count);
+        }
+
+        function loadGifs() {
+            const gallery = document.getElementById('gallery');
+            const gifs = getRandomGifs(20);
+            gifs.forEach(gif => {
+                const img = document.createElement('img');
+                img.src = gif;
+                img.alt = "Funny cat gif";
+                gallery.appendChild(img);
+            });
+        }
+
+    // Combine both arrays and shuffle
+    function getRandomMedia(count) {
+        const allMedia = [...catGifs];
+        const shuffled = allMedia.sort(() => 0.5 - Math.random());
+        return shuffled.slice(0, count);
+    }
+    function getRandomMedia(count) {
+        const allMedia = [...catGifs];
+        const shuffled = allMedia.sort(() => 0.5 - Math.random());
+        return shuffled.slice(0, count);
+    }
+
+    function displayGallery() {
+        const gallery = document.getElementById('gallery');
+        gallery.innerHTML = ''; // Clear existing content
+
+        const randomMedia = getRandomMedia(10); // Get 10 random items (5 images + 5 gifs)
+        randomMedia.forEach((media, index) => {
+            const mediaElement = document.createElement('img');
+            mediaElement.src = media;
+            mediaElement.alt = index < 5 ? "Kitten Image" : "Funny cat gif";
+            mediaElement.classList.add('gallery-item');
+            gallery.appendChild(mediaElement);
+        });
+    }
+
+    // Insert media into the gallery
+    function displayGallery() {
+        const gallery = document.getElementById('gallery');
+        const randomMedia = getRandomMedia(20); // Adjust the number of items to display
+
+        randomMedia.forEach(media => {
+            const mediaElement = document.createElement('img');
+            mediaElement.src = media;
+            mediaElement.alt = "Kitten Image";
+            mediaElement.classList.add('gallery-item');
+            gallery.appendChild(mediaElement);
+        });
+    }
+
+    // Call the function to display the gallery when the page loads
+    window.onload = displayGallery;
+</script>
+
+</body>
+</html>
